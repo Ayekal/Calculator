@@ -9,6 +9,7 @@ if choice in ['1', '2', '3', '4']:
 		print("Invalid input. Please enter numbers only.")
 		return
 
+
 	if choice == '1':
 		print(f"The result is: {add(num1, num2)}")
 
@@ -26,3 +27,4 @@ else:
 
 # Run the calculator
 calculator()
+
