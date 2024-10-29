@@ -1,14 +1,26 @@
-# Basic calculator structure
-def add(x, y):
-    return x + y
+# Checking if choice is one of the four options
+if choice in ['1', '2', '3', '4']:
+	try:
+		num1 = float(input("Enter first number: "))
+		num2 = float(input("Enter second number: "))
+	except ValueError:
+		print("Invalid input. Please enter numbers only.")
+		return
 
-def subtract(x, y):
-    return x - y
+	if choice == '1':
+		print(f"The result is: {add(num1, num2)}")
 
-def multiply(x, y):
-    return x * y
+	elif choice == '2':
+		print(f"The result is: {subtract(num1, num2)}")
 
-def divide(x, y):
-    if y == 0:
-        return "Cannot divide by zero"
-    return x / y
+	elif choice == '3':
+		print(f"The result is: {multiply(num1, num2)}")
+
+	elif choice == '4':
+		print(f"The result is: {divide(num1, num2)}")
+
+else:
+	print("Invalid Input")
+
+# Run the calculator
+calculator()
